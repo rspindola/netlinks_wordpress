@@ -1,0 +1,336 @@
+/*
+  Theme name: nome do tema (na listagem aparecerá esse nome);
+  Theme URI: site que pode ser criado para demonstrar as funcionalidades do tema, pode ainda, conter um formulário para que as pessoas consigam comprá-lo;
+  Author: escreva seu nome, para que as pessoas possam contactá-lo caso tenham interesse no seu tema;
+  Author URI: se você tiver um site próprio, pode adicioná-lo nessa linha do código;
+  Github Theme URI: é interessante adicionar o tema no GitHud para que nesse ambiente colaborativo os usuários possam adicionar novas funcionalidades, sugerir melhorias e tirar dúvidas, por exemplo;
+  Description: adicione informações do tema, se ele é indicado para um tipo específico de negócio, blog, e-commerce, etc.;
+  Version: 1. 0. 0.;
+  Text domain: é importante para traduzir o tema para outros idiomas.
+*/
+
+@font-face{font-family:eicons;src:url(https://www.netlinks.com.br/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.eot?5.10.0);src:url(https://www.netlinks.com.br/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.eot?5.10.0#iefix) format("embedded-opentype"),url(https://www.netlinks.com.br/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff2?5.10.0) format("woff2"),url(https://www.netlinks.com.br/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff?5.10.0) format("woff"),url(https://www.netlinks.com.br/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.ttf?5.10.0) format("truetype"),url(https://www.netlinks.com.br/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.svg?5.10.0#eicon) format("svg");font-weight:400;font-style:normal}
+
+:root{
+  --flex-direction: initial;
+  --flex-wrap: initial;
+  --justify-content: initial;
+  --align-items: initial;
+  --align-content: initial;
+  --gap: initial;
+  --flex-basis: initial;
+  --flex-grow: initial;
+  --flex-shrink: initial;
+  --order: initial;
+  --align-self: initial;
+  --e-global-color-primary: #33c;
+  --e-global-color-secondary: #50d9d4;
+  --e-global-color-text: #212121;
+  --e-global-color-accent: #33c;
+  --e-global-color-d8c7015: #757575;
+  --e-global-color-666ce7a: #6565d8;
+  --e-global-color-fc436de: #fff;
+  --e-global-color-7d8dd86: #f9f9f9;
+  --e-global-color-517e907: #1e1e75;
+  --e-global-typography-primary-font-family: "Poppins";
+  --e-global-typography-primary-font-size: 50px;
+  --e-global-typography-primary-font-weight: 600;
+  --e-global-typography-secondary-font-family: "Poppins";
+  --e-global-typography-secondary-font-size: 40px;
+  --e-global-typography-secondary-font-weight: 400;
+  --e-global-typography-text-font-family: "Poppins";
+  --e-global-typography-text-font-size: 16px;
+  --e-global-typography-text-font-weight: 400;
+  --e-global-typography-accent-font-family: "Poppins";
+  --e-global-typography-accent-font-weight: 500;
+  --e-global-typography-d66767d-font-family: "Poppins";
+  --e-global-typography-d66767d-font-weight: 900;
+  --e-icon-list-icon-size: 24px;
+  --e-icon-list-icon-align: left;
+  --e-icon-list-icon-margin: 0 calc(var(--e-icon-list-icon-size,1em)*0.25) 0 0;
+}
+
+body{
+  margin: 0;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container{
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  min-height: 145px;
+  max-width: 1140px;
+}
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-content-center{
+  justify-content: center;
+}
+
+.justify-content-end{
+  justify-content: end;
+}
+
+.items-center{
+  align-items: center;
+}
+
+.p-2{
+  padding: 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-box{
+  width: 19%;
+  display: flex;
+  align-items: center;
+}
+
+.logo-box img {
+  margin: 6px 0 0;
+  width: 100%;
+}
+
+.right-nav{
+  display: flex;
+  justify-content: end;
+}
+
+.elementor-column{
+  margin: 0 15px;
+  width: 20%;
+}
+
+.icon-box{
+  display: flex;
+  align-items: center;
+  text-align: var(--e-icon-list-icon-align);;
+}
+
+.icon-text{
+  font-family: poppins,Sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--e-global-color-primary);
+}
+
+.icon svg{
+  width: var(--e-icon-list-icon-size,1em);
+  height: var(--e-icon-list-icon-size,1em);
+  fill: var(--e-global-color-secondary);
+  margin: var(--e-icon-list-icon-margin,0 calc(var(--e-icon-list-icon-size, 1em) * .25) 0 0);
+}
+
+.description-box{
+  color: var(--e-global-color-text);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.2em;
+  width: 100%;
+}
+
+
+/* SECTION 01 */
+#section01 {
+  display: flex;
+}
+
+#section01 .first-child{
+  width: 60%;
+  padding-right: 30px;
+}
+
+#section01 h1{
+  color: var(--e-global-color-primary);
+  font-family: reenie beanie,Sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+#section01 h2{
+  color: var(--e-global-color-text);
+  font-size: 37px;
+  font-weight: 600;
+  line-height: 1.2em;
+}
+
+#section01 p{
+  color: var(--e-global-color-text);
+  font-size: 17px;
+  line-height: 1.4em;
+}
+
+#section01 button{
+  font-family: poppins,Sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  fill: var(--e-global-color-fc436de);
+  color: var(--e-global-color-fc436de);
+  background-color: var(--e-global-color-primary);
+  border-style: solid;
+  border-width: 2px;
+  border-color: var(--e-global-color-primary);
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px 0 rgb(0 0 0 / 22%);
+  padding: 15px 40px;
+  cursor: pointer;
+}
+
+#section01 button:hover{
+  color: var(--e-global-color-primary);
+  background-color: var(--e-global-color-fc436de);
+  border-color: var(--e-global-color-primary);
+}
+
+#section01 .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#section01 .card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: var(--e-global-color-text);
+}
+
+#section01 .card img{
+  margin-right: 20px;
+  width: 60px;
+  height: 60px;
+}
+
+#section01 .card-container > div {
+  flex: 50%; /* or - flex: 0 50% - or - flex-basis: 50% - */
+  /*demo*/
+  margin: 20px 0;
+}
+
+.card .title{
+  margin-bottom: 5px;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--e-global-color-primary);
+}
+
+.card .about{
+  padding: 10px 30px 10px 0;
+}
+
+#section02{
+  padding: 40px 0;
+  background-color: var(--e-global-color-7d8dd86);
+}
+
+#section02 h1, #section02 h2{
+  text-align: center;
+}
+
+#section02 h1{
+  color: var(--e-global-color-text);
+    font-size: 37px;
+    font-weight: 600;
+}
+
+#section02 h2{
+  color: var(--e-global-color-text);
+  font-size: 17px;
+  line-height: 1.4em;
+  padding: 0 10%;
+}
+
+#section02 .flex-column{
+  margin: 15px 60px 15px 15px;
+  --e-column-margin-right: 60px;
+  --e-column-margin-left: 15px;
+  padding: 30px;
+}
+
+#section02 .icon-title{
+  font-size: 50px;
+  color: var(--e-global-color-primary);
+  border-color: var(--e-global-color-primary);
+}
+
+#section02 .icon-title svg{
+  width: 1em;
+  height: 1em;
+  position: relative;
+  display: block;
+  fill: var(--e-global-color-primary);
+  margin-bottom: 10px;
+}
+
+#section02 .text-title{
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--e-global-color-primary);
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+}
+
+#section02 ul {
+  margin-top: 20px;
+  padding: 0px 10px;
+}
+
+#section02 li {
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: inherit;
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+#section02 .elementor-icon-list-icon svg{
+  width: var(--e-icon-list-icon-size,1em);
+  height: var(--e-icon-list-icon-size,1em);
+  margin: var(--e-icon-list-icon-margin,0 calc(var(--e-icon-list-icon-size, 1em) * .25) 0 0);
+  fill: var(--e-global-color-primary);
+}
+
+#section02 .text-icon{
+  color: var(--e-global-color-text);
+  padding-left: 11px;
+  font-size: 16px;
+  align-self: center;
+  padding-bottom: 7px;
+}
+
+#section03 h2, #section03 p.sub{
+  text-align: center;
+}
+
+#section03 h2{
+  color: var(--e-global-color-text);
+    font-size: 37px;
+    font-weight: 600;
+    line-height: 1.2em;
+}
